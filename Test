@@ -1,0 +1,20 @@
+# Load the package
+library(baseballStatsAnalyzer)
+
+# Load a dataset
+data <- read.csv("data/baseball_data.csv")
+
+# Calculate batting averages
+data <- calculate_batting_average(data)
+
+# Calculate home runs per player
+home_runs <- calculate_home_runs(data)
+
+# Calculate strikeouts per player
+strikeouts <- calculate_strikeouts(data)
+
+# Visualize batting averages
+visualize_batting_average(data)
+
+# Visualize home runs per player
+visualize_home_runs(home_runs)
