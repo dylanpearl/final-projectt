@@ -1,12 +1,4 @@
 #' Visualize Batting Averages
-#'
-#' This function creates a histogram of batting averages.
-#'
-#' @param data A data frame containing baseball player statistics with column: BattingAverage.
-#' @return A histogram plot.
-#' @examples
-#' data <- read.csv("data/baseball_data.csv")
-#' visualize_batting_average(data)
 visualize_batting_average <- function(data) {
   library(ggplot2)
   ggplot(data, aes(x = BattingAverage)) +
@@ -15,14 +7,6 @@ visualize_batting_average <- function(data) {
 }
 
 #' Visualize Home Runs
-#'
-#' This function creates a bar chart of total home runs per player.
-#'
-#' @param data A data frame containing total home runs per player.
-#' @return A bar chart.
-#' @examples
-#' data <- read.csv("data/baseball_data.csv")
-#' visualize_home_runs(data)
 visualize_home_runs <- function(data) {
   library(ggplot2)
   ggplot(data, aes(x = Player, y = HomeRuns)) +
